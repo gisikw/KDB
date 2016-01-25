@@ -7,7 +7,7 @@ with the [kOS (Kerbal Operating System) mod](https://github.com/KSP-KOS/KOS)
 for Kerbal Space Program.
 
 The scripts are written in the Kerboscript language, which is described
-on the [main documenation page for kOS](http://ksp-kos.github.io/KOS_DOC/).
+on the [main documentation page for kOS](http://ksp-kos.github.io/KOS_DOC/).
 
 ## Usage
 
