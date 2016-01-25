@@ -106,8 +106,7 @@ function make_loggable {
 // +------------------------------------------------------------+
 
 function kdb_save {
-  parameter db.
-  parameter item.
+  parameter db, item.
 
   log "" to db+".kdb".
   delete db+".kdb".
@@ -123,4 +122,13 @@ function kdb_load {
   rename "kdb_load.ks" to db+".kdb".
 
   return kdbData.
+}
+
+function kdb_exists {
+  parameter db.
+
+  local fs is 0.
+  list files in fs.
+  for f in fs if f:name = db+".kdb" return 1.
+  return 0.
 }
